@@ -25,5 +25,6 @@ Then edit `package.json`:
 <mark> To compile:</mark>
 
 ```
+npm install
 npm start
 ```
