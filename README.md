@@ -7,6 +7,8 @@ npm init -y
 npm install express --save
 npm install nodemon --save
 npm install body-parser
+npm install bcrypt-nodejs
+npm install cors
 ```
 Create `server.js`:
 
