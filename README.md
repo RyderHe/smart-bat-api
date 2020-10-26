@@ -7,9 +7,14 @@ npm init -y
 npm install express --save
 npm install nodemon --save
 npm install body-parser
-npm install bcrypt-nodejs
+npm install bcrypt-nodejs           // for hashing the password
 npm install cors
 ```
+
+To connext the server with database, use `knex.js`:
+```
+```
+
 Create `server.js`:
 
 ```
