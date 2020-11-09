@@ -7,7 +7,15 @@ npm init -y
 npm install express --save
 npm install nodemon --save
 npm install body-parser
+npm install knex
+npm install pg
 ```
+
+Note:
+
+- `knex.js`: connect database to server
+
+
 Create `server.js`:
 
 ```
