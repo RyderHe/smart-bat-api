@@ -7,14 +7,11 @@ npm init -y
 npm install express --save
 npm install nodemon --save
 npm install body-parser
-npm install knex
-npm install pg
+npm install bcrypt-nodejs           // for hashing the password
+npm install cors
+npm install knex                    // connect database with server
+npm install pg                      // postgres
 ```
-
-Note:
-
-- `knex.js`: connect database to server
-
 
 Create `server.js`:
 
