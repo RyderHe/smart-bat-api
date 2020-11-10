@@ -10,15 +10,23 @@ const profile = require('./controllers/profile');
 const image = require('./controllers/image');
 
 
+// const db = knex({
+//     client: 'pg',
+//     connection: {
+//       host : '127.0.0.1',
+//       user : 'postgres',
+//       password : 'r37he',
+//       database : 'smart_brain'
+//     }
+//   });
+
 const db = knex({
-    client: 'pg',
-    connection: {
-      host : '127.0.0.1',
-      user : 'postgres',
-      password : 'r37he',
-      database : 'smart_brain'
-    }
-  });
+  client: 'pg',
+  connection: {
+    connectionString : process.env.DATABASE_URL,
+    ssl: true
+  }
+});
 
 // Example to use db
 // db.select('*').from('users').then(data=>{
